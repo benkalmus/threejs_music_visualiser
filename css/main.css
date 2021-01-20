@@ -1,0 +1,104 @@
+body { 
+    margin: 0; 
+    height: 100vh;
+    background-color: #334;
+}
+  
+canvas { 
+    display: block;
+    overflow:hidden;
+}
+
+#drop-area
+{
+  position: static;
+  top: 5%;
+  left: 5%;
+  margin-top: 10px;
+  margin-left: 25px;
+  width: 500px;
+  height: 80px;
+}
+
+body{
+  background: rgba(0,0,0,0.9);
+}
+form{
+  position: static;
+  top: 1%;
+  left: 1%;
+  margin-top: 10px;
+  margin-left: 25px;
+  width: 500px;
+  height: 50px;
+  border: 4px dashed #fff;
+}
+form p{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  display: inline-block;
+  width: 80%;
+  height: 10px;
+  margin-top: 1%;
+  margin-left: 1%;
+  /*text-align: center;
+  line-height: 170px;*/
+  color: #ffffff;
+  font-weight: bold;
+  font-family: Arial;
+  font-size:9;
+}
+
+form input{
+  /*position: absolute;*/display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+}
+
+
+input[type=button], input[type=submit], form button{
+  position: absolute;
+  left: 45%;
+  top: 0%;
+  margin: 0;
+  color: #fff;
+  background: #4f2972;
+  font-weight: bold;
+  border: 1px;
+  width: 300px;
+  height: 35px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 4px;
+  border-bottom: 4px solid #6e4e8a;
+  border-right: 4px solid #6e4e8a;
+  transition: all .2s ease;
+  outline: none;
+  opacity: 1;
+}
+input[type=button]:hover, input[type=submit]:hover, form button:hover{
+  background: #4f2972;
+	color: #fff;
+}
+input[type=button]:active, input[type=submit]:active, form button:active{
+  border:0;
+}
+
+#play {
+  position: absolute;
+  left: 70%;
+  top: 0%;
+  width: 100px;
+}
+#pause {
+  position: absolute;
+  left: 80%;
+  top: 0%;
+  width: 100px;
+}
+

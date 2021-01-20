@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js" ></script>
+    <title>Music Visualizer</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div id="drop-area" >
+        <form class="uploadMusic" action="/uploadfile" enctype="multipart/form-data" method="POST">
+            <input type="file" id="fileElem" name="userFile" multiple accept="audio/*" >
+            <p >Click to upload or Drag and Drop your music</p> 
+            <input type="button" value="Upload" id="uploadButton"/>
+        </form>
+        <input type="button" id="play" value="Play song"/>
+        <input type="button" id="pause" value="Pause song"/>
+    </div>
+
+    <audio id="audioFile" src="uploads/sample.flac"  allow="autoplay"></audio>  
+    <script type='text/javascript' src="lib/three.min.js"></script>
+    <script type='text/javascript' src="lib/Tween.js"></script>
+    <script type='text/javascript' src="https://unpkg.com/three@0.85.0/examples/js/controls/OrbitControls.js"></script>
+    <script type='text/javascript' src="lib/dat.gui.min.js"></script>
+
+    <!--<script type='text/javascript' src="gui.js"></script> -->
+    <script type='text/javascript' src="warpEffect.js"></script>
+    <script type='text/javascript' src="shapes.js"></script>
+    <script type='text/javascript' src="cloud.js"></script>
+    <script type='text/javascript' src="main.js"></script>
+</body>
+</html>
